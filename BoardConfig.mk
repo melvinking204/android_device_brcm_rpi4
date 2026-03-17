@@ -25,7 +25,7 @@ TARGET_SCREEN_DENSITY := 240
 # Kernel
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
-BOARD_KERNEL_CMDLINE := no_console_suspend root=/dev/ram0 rootwait androidboot.hardware=rpi4
+BOARD_KERNEL_CMDLINE := console=null no_console_suspend root=/dev/ram0 rootwait androidboot.hardware=rpi4
 
 # Manifest
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/framework_compatibility_matrix.xml
