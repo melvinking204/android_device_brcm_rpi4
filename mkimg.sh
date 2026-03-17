@@ -116,4 +116,10 @@ sudo losetup -d "/dev/${LOOPDEV}"
 sudo chown ${USER}:${USER} ${ANDROID_PRODUCT_OUT}/${IMGNAME}
 
 echo "Done, created ${ANDROID_PRODUCT_OUT}/${IMGNAME}!"
+
+echo "Compressing into ${ANDROID_PRODUCT_OUT}/${ZIPNAME}..."
+cd ${ANDROID_PRODUCT_OUT} zip -1 ${ZIPNAME} ${IMGNAME}
+
+echo "Done, successfully packaged ${ZIPNAME}!"
+
 exit 0
