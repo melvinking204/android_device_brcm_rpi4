@@ -45,7 +45,6 @@ PRODUCT_COPY_FILES += \
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := rpi4
 PRODUCT_NAME := aosp_rpi4
-PRODUCT_BRAND := Raspberry
-PRODUCT_MODEL := Pi 4
-PRODUCT_MANUFACTURER := Raspberry
-
+PRODUCT_BRAND := AstraMail
+PRODUCT_MODEL := AstraMail
+PRODUCT_MANUFACTURER := Starlight Unlimited
