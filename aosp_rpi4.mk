@@ -48,3 +48,4 @@ PRODUCT_NAME := aosp_rpi4
 PRODUCT_BRAND := Raspberry
 PRODUCT_MODEL := Pi 4
 PRODUCT_MANUFACTURER := Raspberry
+
