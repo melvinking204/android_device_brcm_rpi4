@@ -26,10 +26,22 @@ disable_overscan=1
 
 # Graphics acceleration
 disable_fw_kms_setup=1
+dtoverlay=cma,cma-512
 dtoverlay=vc4-kms-v3d
+max_framebuffers=2
+display_auto_detect=1
+    
+# Disable firmware display initialization to prevent KMS driver crashes
+ignore_lcd=1
+    
+# Enable the official 7-inch touchscreen over DSI
+ dtoverlay=vc4-kms-dsi-7inch
+    
 
 # I2C
-#dtparam=i2c_arm=on
+dtparam=i2c_arm=on
+dtparam=i2c_vc=on
+    
 
 # I2S
 #dtparam=i2s=on

@@ -10,7 +10,7 @@ DEVICE_PATH := device/brcm/rpi4
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 PRODUCT_AAPT_CONFIG := normal mdpi hdpi
-PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_AAPT_PREF_CONFIG := mdpi
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
