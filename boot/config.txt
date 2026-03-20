@@ -30,18 +30,18 @@ dtoverlay=cma,cma-512
 dtoverlay=vc4-kms-v3d
 max_framebuffers=2
 display_auto_detect=1
-    
+
 # Disable firmware display initialization to prevent KMS driver crashes
 ignore_lcd=1
-    
+
 # Enable the official 7-inch touchscreen over DSI
- dtoverlay=vc4-kms-dsi-7inch
-    
+dtoverlay=vc4-kms-dsi-7inch
+
 
 # I2C
-dtparam=i2c_arm=on
+#dtparam=i2c_arm=on
 dtparam=i2c_vc=on
-    
+
 
 # I2S
 #dtparam=i2s=on
@@ -51,6 +51,9 @@ enable_uart=0
 
 # SPI
 #dtparam=spi=on
+
+# Power Button
+dtoverlay=gpio-key,gpio=3,active_low=1,gpio_pull=up,keycode=116,label="Power Button"
 
 # USB
 dtoverlay=dwc2,dr_mode=peripheral
