@@ -71,3 +71,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Rotation
 BOARD_KERNEL_CMDLINE += video=DSI-1:panel_orientation=right
+BOARD_VENDOR_SEPOLICY_DIRS += vendor/astra/sepolicy

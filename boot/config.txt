@@ -38,7 +38,7 @@ ignore_lcd=1
 #dtoverlay=vc4-kms-dsi-7inch
 
 # Enable the Waveshare 7-inch DSI overlay
-dtoverlay=vc4-kms-dsi-waveshare-panel-v2,7_0_inch_a
+dtoverlay=vc4-kms-dsi-waveshare-panel-v2,7_0_inch_a,swapxy=1,invx=1
 
 # I2C
 #dtparam=i2c_arm=on
