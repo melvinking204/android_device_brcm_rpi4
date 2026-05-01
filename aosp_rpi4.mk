@@ -42,9 +42,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml
 
+# Displays
+PRODUCT_COPY_FILES += \
+    device/brcm/rpi4/vc4-kms-dsi-waveshare-panel-v2.dtbo:boot/overlays/vc4-kms-dsi-waveshare-panel-v2.dtbo   
+
+PRODUCT_COPY_FILES += \
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_DEVICE := rpi4
 PRODUCT_NAME := aosp_rpi4
 PRODUCT_BRAND := AstraMail
 PRODUCT_MODEL := AstraMail
-PRODUCT_MANUFACTURER := Starlight Unlimited
+PRODUCT_MANUFACTURER := Starlight
+

@@ -75,3 +75,6 @@ ro.boot.hypervisor.vm.supported=1
 # Wifi
 ro.boot.wificountrycode=00
 wifi.interface=wlan0
+
+# Orientation
+ro.surface_flinger.primary_display_orientation=ORIENTATION_90

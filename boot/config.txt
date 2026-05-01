@@ -35,8 +35,10 @@ display_auto_detect=1
 ignore_lcd=1
 
 # Enable the official 7-inch touchscreen over DSI
-dtoverlay=vc4-kms-dsi-7inch
+#dtoverlay=vc4-kms-dsi-7inch
 
+# Enable the Waveshare 7-inch DSI overlay
+dtoverlay=vc4-kms-dsi-waveshare-panel-v2,7_0_inch_a
 
 # I2C
 #dtparam=i2c_arm=on
