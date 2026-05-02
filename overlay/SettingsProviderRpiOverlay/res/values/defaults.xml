@@ -19,7 +19,7 @@
 <resources>
 
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL -->
-    <string name="def_device_name_simple">Raspberry Pi 4</string>
+    <string name="def_device_name_simple">AstraMail</string>
 
     <!-- Default screen brightness -->
     <integer name="def_screen_brightness">128</integer>
@@ -33,8 +33,12 @@
     <!-- Disable the lockscreen -->
     <bool name="def_lockscreen_disabled">true</bool>
 
-    <!-- Keep screen on at all times by default -->
-    <bool name="def_stay_on_while_plugged_in">true</bool>
+    <!-- Keep screen on at all times by default 
+    <bool name="def_stay_on_while_plugged_in">false</bool> -->
+
+    <!-- Force the Settings toggle for Screensaver to be ON out of the box -->
+    <bool name="def_screensaver_enabled">true</bool>
+    <bool name="def_screensaver_activate_on_sleep">true</bool>
 
     <!-- No setup wizard -->
     <bool name="def_device_provisioned">true</bool>

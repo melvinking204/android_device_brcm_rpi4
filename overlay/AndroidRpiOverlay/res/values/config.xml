@@ -115,7 +115,7 @@
              1 - MODE_NIGHT_NO
              2 - MODE_NIGHT_YES
     -->
-    <integer name="config_defaultNightMode">2</integer>
+    <integer name="config_defaultNightMode">1</integer>
 
     <!-- CEC Configuration -->
     <bool name="config_cecTvSendStandbyOnSleepEnabled_default">false</bool>
@@ -127,4 +127,14 @@
     <!-- Whether the developer option for desktop mode is supported on the current device  -->
     <bool name="config_isDesktopModeDevOptionSupported">true</bool>
 
+    <!-- Enable screensavers by default -->
+    <bool name="config_dreamsEnabledByDefault">true</bool>
+    
+    <!-- Trigger the screensaver when the screen times out (sleeps) -->
+    <bool name="config_dreamsActivatedOnSleepByDefault">true</bool>
+
+    <!-- Point to YOUR launcher's package and the new service -->
+    <string name="config_dreamsDefaultComponent">com.starlight.astralauncher/com.starlight.astralauncher.service.LauncherScreensaverService</string>
+
 </resources>
+
